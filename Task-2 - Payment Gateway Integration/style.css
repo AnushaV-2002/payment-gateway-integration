@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link{
+    font-weight: 600; 
+}
+/*styling for banner*/
+.banner{
+ 
+    background-image: url("./images/Old_Age_Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .section{
+    max-width:100%;
+    height:100vh;
+  }
+  
+  .overlay{
+   
+    width:100%;
+    height:100vh;
+    background-color: rgba(77, 57, 46,0.7);
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .overlay_support{
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap:2em;
+  }
+  .event_name{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:5px;
+  }
+  .event_name>p{
+    text-align: center;
+    font-weight: 700;
+    color:rgb(0,0,0);
+    font-size: 3.8em;
+    line-height: 1.1em;
+  }
+  .event_name .desc{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.875em;
+  }
+  .event_date{
+    text-align: center;
+    font-weight: 500;
+    color:rgb(0,0,0);
+    font-size: 1.563em;
+  }
+  
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: rgb(103, 87, 74);
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,rgb(103, 87, 74) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+   
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .button-30:focus {
+    box-shadow: rgb(103, 87, 74) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(117,120,123,80%) 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,rgb(103, 87, 74) 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: rgb(103, 87, 74) 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  .button-30 a{
+    text-decoration: none;
+    color:black;
+  }
+  .button-30 a:hover{
+    color: black;
+  }
+  /*media query for Banner section starts*/
+  @media all and (max-width:770px){
+    .event_name>p{
+      font-size: 1.8em;
+    }
+  }
+  @media all and (max-width:700px){
+    .section{
+     max-width: 100%;
+      height:80vh;
+    }
+    .overlay{
+      height:80vh;
+    }
+    .overlay_support{
+     
+      gap:1em;
+    }
+    .event_name>p{
+      font-size: 1.8em;
+    }
+    .event_name .desc{
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.25em;
+    }
+    .event_date{
+      /* width:14em; */
+      text-align: center;
+      font-weight: 500;
+      color:rgb(225,225,225);
+      font-size: 1em;
+    }
+    .button-30{
+      height: 20px;
+      font-size: 22px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+  
+  }
+  @media all and (max-width:388px){
+    .event_name>p{
+      font-size: 1.8em;
+    }
+    .event_date{
+      width:15em;
+    }
+    
+    .event_name .desc{
+      
+      font-size: 0.9em;
+    }
+    .overlay_support{
+     
+      gap:0.8em;
+    }
+  }
+  /*media query for Banner section ends*/
+  /*styling for banner section ends*/
+
+  /*styling for About us section*/
+  .about_us_section{
+    max-width: 100%;
+    padding:1em;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:0.5em;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(103, 87, 74,0.8);
+  }
+  .about_us_section h2{
+    color:rgb(77, 57, 46);
+  }
+  .about_desc{
+    text-align: justify;
+  }
+  /*styling for contact us section starts*/
+
+.contact_us{
+  max-width: 100%;
+    padding:1em;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:0.5em;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(103, 87, 74);
+}
+
+.contact_container{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:0.5em;
+ 
+}
+
+input,textarea{
+  width:100%;
+  background-color: #efefef;
+  outline:none;
+  border:none;
+  
+}
+.contact_container button{
+  padding:0.5em;
+  align-self: center;
+  
+}
+.contact_us h2{
+  color:black;
+}
